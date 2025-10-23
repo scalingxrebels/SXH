@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScalingX Hypergrowth - Smart Scale With AI | 30-Day Impact System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    body { overflow-x: hidden; }
+    .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); }
+    .gradient-text { background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .glow { box-shadow: 0 0 40px rgba(96, 165, 250, 0.3); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+    .float-animation { animation: float 6s ease-in-out infinite; }
+    @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(96, 165, 250, 0.4); } 50% { box-shadow: 0 0 40px rgba(96, 165, 250, 0.8); } }
+    .pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+    .stat-counter { font-variant-numeric: tabular-nums; }
+    .ticker { animation: ticker 30s linear infinite; }
+    @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  </style>
+</head>
+<body class="bg-slate-900 text-white">
+  
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-slate-900/95 backdrop-blur-lg border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold gradient-text">ScalingX</div>
+      <div class="hidden md:flex space-x-8 text-sm">
+        <a href="#impact" class="hover:text-blue-400 transition">Impact System</a>
+        <a href="#proof" class="hover:text-blue-400 transition">Proof</a>
+        <a href="#pathways" class="hover:text-blue-400 transition">Pathways</a>
+      </div>
+      <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-semibold text-sm transition">Get Started</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section - Split Screen -->
+  <section class="gradient-bg pt-32 pb-20 px-6 min-h-screen flex items-center">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Left: Emotional Story -->
+      <div class="space-y-8">
+        <div class="inline-block px-4 py-2 bg-blue-500/20 rounded-full text-blue-300 text-sm font-semibold border border-blue-500/30">
+          🚀 For Growth-Stage Founders & PE/VC Leaders
+        </div>
+        
+        <h1 class="text-5xl md:text-6xl font-black leading-tight">
+          From Growth Plateau to <span class="gradient-text">Scale Breakthrough</span> in 30 Days
+        </h1>
+        
+        <p class="text-xl text-slate-300 leading-relaxed">
+          Your startup hit $10M ARR. Now scaling feels like pushing uphill. While others struggle with manual processes, AI-native leaders gain <span class="text-blue-400 font-semibold">unfair advantages</span>.
+        </p>
+
+        <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 space-y-4">
+          <div class="flex items-start space-x-3">
+            <svg class="w-6 h-6 text-green-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <div>
+              <div class="font-semibold text-lg">Strategy + Playbooks + AI Agents</div>
+              <div class="text-slate-400">Complete 30-Day Impact System</div>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <svg class="w-6 h-6 text-green-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <div>
+              <div class="font-semibold text-lg">Measurable Results, Not Consulting Theater</div>
+              <div class="text-slate-400">ROI-guaranteed transformation</div>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <svg class="w-6 h-6 text-green-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <div>
+              <div class="font-semibold text-lg">Join 47 Growth-Stage CEOs</div>
+              <div class="text-slate-400">Who 10x'd their scaling velocity</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-bold text-lg pulse-glow transition">
+            Claim Your Growth Acceleration Audit →
+          </button>
+          <button class="border-2 border-slate-600 hover:border-blue-500 px-8 py-4 rounded-lg font-semibold text-lg transition">
+            Get AI Opportunity Intel
+          </button>
+        </div>
+
+        <div class="text-sm text-slate-400">
+          ⚡ Next cohort starts in 12 days · 23 spots remaining
+        </div>
+      </div>
+
+      <!-- Right: Live Dashboard -->
+      <div class="space-y-6">
+        <div class="bg-slate-800/70 backdrop-blur-xl border border-slate-700 rounded-2xl p-8 glow float-animation">
+          <div class="text-sm text-slate-400 mb-4">LIVE CLIENT METRICS</div>
+          
+          <div class="grid grid-cols-2 gap-6 mb-6">
+            <div>
+              <div class="text-4xl font-bold text-green-400 stat-counter">+342%</div>
+              <div class="text-slate-400 text-sm mt-1">Pipeline Velocity</div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold text-blue-400 stat-counter">-61%</div>
+              <div class="text-slate-400 text-sm mt-1">CAC Reduction</div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold text-purple-400 stat-counter">3.2x</div>
+              <div class="text-slate-400 text-sm mt-1">Decision Speed</div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold text-yellow-400 stat-counter">$4.2M</div>
+              <div class="text-slate-400 text-sm mt-1">Value Created</div>
+            </div>
+          </div>
+
+          <div class="border-t border-slate-700 pt-6 space-y-3">
+            <div class="flex items-center justify-between text-sm">
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span class="text-slate-300">Managing Partner at [VC] just joined</span>
+              </div>
+              <span class="text-slate-500">2m ago</span>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span class="text-slate-300">CEO of $15M ARR SaaS downloaded report</span>
+              </div>
+              <span class="text-slate-500">5m ago</span>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span class="text-slate-300">Operating Partner booked Deep Dive</span>
+              </div>
+              <span class="text-slate-500">8m ago</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Testimonial Placeholder -->
+        <div class="bg-slate-800/70 backdrop-blur-xl border border-slate-700 rounded-2xl overflow-hidden card-hover">
+          <div class="aspect-video bg-gradient-to-br from-blue-900 to-purple-900 flex items-center justify-center relative">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <button class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition">
+                <svg class="w-10 h-10 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <div class="bg-black/50 backdrop-blur-sm rounded-lg p-3">
+                <div class="font-semibold">Sarah Chen, CEO @ TechScale</div>
+                <div class="text-sm text-slate-300">"From 200% churn to industry-leading retention"</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof Ticker -->
+  <section class="bg-slate-800/50 border-y border-slate-700 py-4 overflow-hidden">
+    <div class="flex space-x-12 ticker">
+      <div class="flex space-x-12 whitespace-nowrap">
+        <span class="text-slate-400">🏆 Trusted by Series B-D Startups</span>
+        <span class="text-slate-400">💼 Portfolio companies of Sequoia, a16z, Index</span>
+        <span class="text-slate-400">📈 $420M+ in value created</span>
+        <span class="text-slate-400">⚡ 30-day average time to first impact</span>
+        <span class="text-slate-400">🎯 98% client satisfaction rate</span>
+      </div>
+      <div class="flex space-x-12 whitespace-nowrap">
+        <span class="text-slate-400">🏆 Trusted by Series B-D Startups</span>
+        <span class="text-slate-400">💼 Portfolio companies of Sequoia, a16z, Index</span>
+        <span class="text-slate-400">📈 $420M+ in value created</span>
+        <span class="text-slate-400">⚡ 30-day average time to first impact</span>
+        <span class="text-slate-400">🎯 98% client satisfaction rate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem-Solution Fit -->
+  <section id="impact" class="py-24 px-6 bg-slate-900">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black mb-4">The AI-Native Advantage</h2>
+        <p class="text-xl text-slate-400">Transform from manual operations to intelligent systems</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Current State -->
+        <div class="bg-red-900/10 border-2 border-red-800/50 rounded-2xl p-8 card-hover">
+          <div class="text-red-400 text-sm font-bold mb-4">❌ CURRENT STATE</div>
+          <h3 class="text-2xl font-bold mb-6">Growth Plateau</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start space-x-3">
+              <span class="text-red-400 mt-1">•</span>
+              <span class="text-slate-300">Manual GTM processes killing velocity</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-red-400 mt-1">•</span>
+              <span class="text-slate-300">Reactive operations burning cash</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-red-400 mt-1">•</span>
+              <span class="text-slate-300">Gut-feel decisions = missed opportunities</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-red-400 mt-1">•</span>
+              <span class="text-slate-300">Every month costs $500K+ in lost value</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- AI-Native State -->
+        <div class="bg-gradient-to-br from-blue-900/30 to-purple-900/30 border-2 border-blue-500 rounded-2xl p-8 card-hover glow relative">
+          <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-4 py-1 rounded-full text-xs font-bold">
+            AI-NATIVE
+          </div>
+          <div class="text-blue-400 text-sm font-bold mb-4">✨ TRANSFORMED STATE</div>
+          <h3 class="text-2xl font-bold mb-6">Scale Breakthrough</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start space-x-3">
+              <span class="text-green-400 mt-1">✓</span>
+              <span class="text-slate-200 font-semibold">Smart GTM Systems: +40% pipeline velocity</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-green-400 mt-1">✓</span>
+              <span class="text-slate-200 font-semibold">Predictive Operations: -60% cost optimization</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-green-400 mt-1">✓</span>
+              <span class="text-slate-200 font-semibold">Data-Driven Governance: 3x decision speed</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-green-400 mt-1">✓</span>
+              <span class="text-slate-200 font-semibold">Compounding advantages every quarter</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Your Transformation -->
+        <div class="bg-gradient-to-br from-green-900/20 to-emerald-900/20 border-2 border-green-600/50 rounded-2xl p-8 card-hover">
+          <div class="text-green-400 text-sm font-bold mb-4">🚀 YOUR PATH</div>
+          <h3 class="text-2xl font-bold mb-6">30-Day Impact</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start space-x-3">
+              <span class="text-yellow-400 mt-1">→</span>
+              <span class="text-slate-300"><strong>Week 1:</strong> Strategy clarity & quick wins identified</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-yellow-400 mt-1">→</span>
+              <span class="text-slate-300"><strong>Week 2:</strong> Playbooks deployed & systems built</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-yellow-400 mt-1">→</span>
+              <span class="text-slate-300"><strong>Week 3:</strong> AI agents automated & scaled</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-yellow-400 mt-1">→</span>
+              <span class="text-slate-300"><strong>Week 4:</strong> Measurable results & expansion plan</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 30-Day Impact System -->
+  <section class="py-24 px-6 bg-gradient-to-b from-slate-900 to-slate-800">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black mb-4">
+          The <span class="gradient-text">30-Day Impact System</span>
+        </h2>
+        <p class="text-xl text-slate-400">Strategy + Playbooks + Agents = Measurable Results</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-8 card-hover">
+          <div class="w-16 h-16 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Strategy</h3>
+          <p class="text-slate-400 mb-4">Clarity on the decisive levers, goals and KPIs.</p>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li>• Smart GTM Engineering</li>
+            <li>• Smart Operations Design</li>
+            <li>• Smart Governance Framework</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-8 card-hover">
+          <div class="w-16 h-16 bg-purple-600/20 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Playbooks</h3>
+          <p class="text-slate-400 mb-4">Systematic approach to measurably implement strategy.</p>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li>• Execution Frameworks</li>
+            <li>• KPI Tracking Systems</li>
+            <li>• Process Optimization</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-8 card-hover">
+          <div class="w-16 h-16 bg-green-600/20 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">AI Agents</h3>
+          <p class="text-slate-400 mb-4">AI-powered systems that make processes and decisions scalable.</p>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li>• Multi-Agent Systems</li>
+            <li>• Intelligent Automations</li>
+            <li>• Telemetry & Governance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive ROI Calculator -->
+  <section class="py-24 px-6 bg-slate-900">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-black mb-4">What's Your AI ROI Potential?</h2>
+        <p class="text-xl text-slate-400">Calculate your personalized impact projection</p>
+      </div>
+
+      <div class="bg-gradient-to-br from-slate-800 to-slate-900 border-2 border-blue-500/30 rounded-3xl p-10 glow">
+        <div class="space-y-6">
+          <div>
+            <label class="block text-sm font-semibold mb-2">Current ARR (€M)</label>
+            <input type="range" min="5" max="100" value="15" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer" id="arrSlider">
+            <div class="text-right text-2xl font-bold text-blue-400 mt-2">€<span id="arrValue">15</span>M</div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold mb-2">Team Size</label>
+            <input type="range" min="20" max="500" value="75" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer" id="teamSlider">
+            <div class="text-right text-2xl font-bold text-blue-400 mt-2"><span id="teamValue">75</span> people</div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold mb-2">Monthly Burn Rate (€K)</label>
+            <input type="range" min="100" max="2000" value="500" step="50" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer" id="burnSlider">
+            <div class="text-right text-2xl font-bold text-blue-400 mt-2">€<span id="burnValue">500</span>K/mo</div>
+          </div>
+        </div>
+
+        <div class="mt-10 pt-8 border-t border-slate-700">
+          <div class="text-center mb-6">
+            <div class="text-sm text-slate-400 mb-2">YOUR ESTIMATED 12-MONTH IMPACT</div>
+            <div class="text-5xl font-black gradient-text">€<span id="roiValue">2.4</span>M</div>
+            <div class="text-slate-400 mt-2">in additional value creation</div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4 mb-8">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-green-400">+<span id="pipelineGain">40</span>%</div>
+              <div class="text-xs text-slate-400 mt-1">Pipeline Velocity</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-blue-400">-<span id="costSaving">60</span>%</div>
+              <div class="text-xs text-slate-400 mt-1">Operational Cost</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-purple-400"><span id="speedGain">3.2</span>x</div>
+              <div class="text-xs text-slate-400 mt-1">Decision Speed</div>
+            </div>
+          </div>
+
+          <button class="w-full bg-blue-600 hover:bg-blue-700 py-4 rounded-xl font-bold text-lg pulse-glow transition">
+            Get My Personalized Impact Plan →
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies / Proof -->
+  <section id="proof" class="py-24 px-6 bg-gradient-to-b from-slate-900 to-slate-800">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black mb-4">Proven Impact, Not Promises</h2>
+        <p class="text-xl text-slate-400">Real results from Growth-Stage companies</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <!-- Case Study 1 -->
+        <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-8 card-hover">
+          <div class="flex items-start justify-between mb-6">
+            <div>
+              <div class="text-sm text-blue-400 font-semibold mb-1">B2B SaaS · Series B · $18M ARR</div>
+              <h3 class="text-2xl font-bold">From Chaos to Predictable Growth</h3>
+            </div>
+            <div class="text-4xl">📈</div>
+          </div>
+          
+          <div class="space-y-4 mb-6">
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">Pipeline Conversion</span>
+              <span class="text-green-400 font-bold">+156%</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">Sales Cycle Time</span>
+              <span class="text-green-400 font-bold">-42 days</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">CAC Payback</span>
+              <span class="text-green-400 font-bold">8 → 3 months</span>
+            </div>
+          </div>
+
+          <blockquote class="border-l-4 border-blue-500 pl-4 italic text-slate-300">
+            "We tried 3 consulting firms before ScalingX. They delivered in 30 days what others promised in 6 months."
+          </blockquote>
+          <div class="mt-4 text-sm text-slate-400">— Michael R., CEO</div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-8 card-hover">
+          <div class="flex items-start justify-between mb-6">
+            <div>
+              <div class="text-sm text-purple-400 font-semibold mb-1">FinTech · Series C · $42M ARR</div>
+              <h3 class="text-2xl font-bold">AI-Native Operations at Scale</h3>
+            </div>
+            <div class="text-4xl">⚡</div>
+          </div>
+          
+          <div class="space-y-4 mb-6">
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">Operational Efficiency</span>
+              <span class="text-green-400 font-bold">+287%</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">Cost Reduction</span>
+              <span class="text-green-400 font-bold">-$1.8M/year</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">Time to Decision</span>
+              <span class="text-green-400 font-bold">5x faster</span>
+            </div>
+          </div>
+
+          <blockquote class="border-l-4 border-purple-500 pl-4 italic text-slate-300">
+            "The multi-agent system transformed our operations. We're now scaling without adding headcount."
+          </blockquote>
+          <div class="mt-4 text-sm text-slate-400">— Lisa K., COO</div>
+        </div>
+
+        <!-- Case Study 3 -->
+        <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-8 card-hover">
+          <div class="flex items-start justify-between mb-6">
+            <div>
+              <div class="text-sm text-green-400 font-semibold mb-1">E-Commerce · Series B · $25M ARR</div>
+              <h3 class="text-2xl font-bold">Smart GTM Revolution</h3>
+            </div>
+            <div class="text-4xl">🎯</div>
+          </div>
+          
+          <div class="space-y-4 mb-6">
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">Customer Acquisition</span>
+              <span class="text-green-400 font-bold">+412%</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">LTV:CAC Ratio</span>
+              <span class="text-green-400 font-bold">2.1 → 7.3</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">Market Expansion</span>
+              <span class="text-green-400 font-bold">3 new verticals</span>
+            </div>
+          </div>
+
+          <blockquote class="border-l-4 border-green-500 pl-4 italic text-slate-300">
+            "Our board asked how we achieved this velocity. The answer: AI-native GTM systems from day one."
+          </blockquote>
+          <div class="mt-4 text-sm text-slate-400">— James T., VP Growth</div>
+        </div>
+
+        <!-- Case Study 4 -->
+        <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-8 card-hover">
+          <div class="flex items-start justify-between mb-6">
+            <div>
+              <div class="text-sm text-yellow-400 font-semibold mb-1">Healthcare Tech · Series D · $67M ARR</div>
+              <h3 class="text-2xl font-bold">Enterprise-Grade AI Governance</h3>
+            </div>
+            <div class="text-4xl">🏥</div>
+          </div>
+          
+          <div class="space-y-4 mb-6">
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">Compliance Automation</span>
+              <span class="text-green-400 font-bold">98% automated</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">Risk Reduction</span>
+              <span class="text-green-400 font-bold">-84%</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-slate-400">Audit Preparation</span>
+              <span class="text-green-400 font-bold">6 weeks → 3 days</span>
+            </div>
+          </div>
+
+          <blockquote class="border-l-4 border-yellow-500 pl-4 italic text-slate-300">
+            "Smart Governance gave us the confidence to scale into regulated markets. Game-changing."
+          </blockquote>
+          <div class="mt-4 text-sm text-slate-400">— Dr. Amanda W., Chief Compliance Officer</div>
+        </div>
+      </div>
+
+      <!-- Logo Wall -->
+      <div class="text-center">
+        <div class="text-sm text-slate-500 mb-6">TRUSTED BY GROWTH-STAGE LEADERS AT</div>
+        <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
+          <div class="text-2xl font-bold text-slate-600">TechScale</div>
+          <div class="text-2xl font-bold text-slate-600">GrowthCo</div>
+          <div class="text-2xl font-bold text-slate-600">ScaleUp Inc</div>
+          <div class="text-2xl font-bold text-slate-600">VelocityAI</div>
+          <div class="text-2xl font-bold text-slate-600">NextGen</div>
+          <div class="text-2xl font-bold text-slate-600">HyperGrowth</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Ladder / Pathways -->
+  <section id="pathways" class="py-24 px-6 bg-slate-900">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black mb-4">Choose Your Growth Path</h2>
+        <p class="text-xl text-slate-400">Multiple entry points, one destination: Scale Breakthrough</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Path A: Education First -->
+        <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-8 card-hover">
+          <div class="text-blue-400 text-sm font-bold mb-4">PATH A: EXPLORE</div>
+          <h3 class="text-3xl font-bold mb-4">AI Opportunity Finder</h3>
+          <div class="text-4xl font-black text-slate-300 mb-6">FREE</div>
+          
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-300">Interactive AI Readiness Assessment</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-300">Personalized Opportunity Report</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-300">Growth-Stage Playbook Preview</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-300">Email Nurture Sequence</span>
+            </li>
+          </ul>
+
+          <button class="w-full bg-slate-700 hover:bg-slate-600 py-3 rounded-lg font-semibold transition">
+            Start Free Assessment →
+          </button>
+        </div>
+
+        <!-- Path B: Deep Dive -->
+        <div class="bg-gradient-to-br from-blue-900/30 to-purple-900/30 border-2 border-blue-500 rounded-2xl p-8 card-hover glow relative">
+          <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 px-4 py-1 rounded-full text-xs font-bold">
+            MOST POPULAR
+          </div>
+          <div class="text-purple-400 text-sm font-bold mb-4">PATH B: ACCELERATE</div>
+          <h3 class="text-3xl font-bold mb-4">Growth Acceleration Audit</h3>
+          <div class="mb-6">
+            <div class="text-4xl font-black text-white">€890</div>
+            <div class="text-sm text-slate-400">One-time investment</div>
+          </div>
+          
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-200 font-semibold">2-Hour Deep Dive Session</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-200 font-semibold">Custom 30-Day Action Plan</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-200 font-semibold">ROI Projection Model</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-200 font-semibold">Quick Win Identification</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-200 font-semibold">Implementation Roadmap</span>
+            </li>
+          </ul>
+
+          <button class="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-bold transition pulse-glow">
+            Book Your Audit →
+          </button>
+          <div class="text-center text-xs text-slate-400 mt-3">€890 credit toward Impact Sprint</div>
+        </div>
+
+        <!-- Path C: Full Transformation -->
+        <div class="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border-2 border-purple-500 rounded-2xl p-8 card-hover">
+          <div class="text-pink-400 text-sm font-bold mb-4">PATH C: TRANSFORM</div>
+          <h3 class="text-3xl font-bold mb-4">30-Day Impact Sprint</h3>
+          <div class="mb-6">
+            <div class="text-4xl font-black text-white">€13,490</div>
+            <div class="text-sm text-slate-400">Complete transformation</div>
+          </div>
+          
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-200 font-semibold">Complete Strategy Development</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-200 font-semibold">Custom Playbook Implementation</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-200 font-semibold">AI Agent System Deployment</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-200 font-semibold">Dedicated Success Manager</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-slate-200 font-semibold">ROI Guarantee & Performance Tracking</span>
+            </li>
+          </ul>
+
+          <button class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 py-3 rounded-lg font-bold transition">
+            Start Your Sprint →
+          </button>
+          <div class="text-center text-xs text-slate-400 mt-3">Limited to 5 clients per quarter</div>
+        </div>
+      </div>
+
+      <!-- Guarantee Section -->
+      <div class="mt-16 bg-gradient-to-r from-green-900/20 to-emerald-900/20 border-2 border-green-600/50 rounded-2xl p-8 text-center">
+        <div class="text-4xl mb-4">🛡️</div>
+        <h3 class="text-2xl font-bold mb-4">Our Impact Guarantee</h3>
+        <p class="text-slate-300 max-w-3xl mx-auto">
+          If you don't see measurable improvements in your key metrics within 60 days of completing the 30-Day Impact Sprint, 
+          we'll work with you for free until you do. No questions asked. That's how confident we are in our system.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-24 px-6 bg-gradient-to-b from-slate-900 to-slate-800">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black mb-4">Common Questions</h2>
+        <p class="text-xl text-slate-400">Everything you need to know</p>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-slate-800/70 border border-slate-700 rounded-xl p-6 card-hover">
+          <h3 class="text-xl font-bold mb-3">Why is 30 days realistic when others take 6+ months?</h3>
+          <p class="text-slate-400">
+            Traditional consulting focuses on strategy documents. We focus on implementation. Our system combines pre-built playbooks, 
+            AI-powered automation, and proven frameworks that eliminate 80% of the typical "discovery" phase. You get results, not reports.
+          </p>
+        </div>
+
+        <div class="bg-slate-800/70 border border-slate-700 rounded-xl p-6 card-hover">
+          <h3 class="text-xl font-bold mb-3">What if we've tried AI consultants before and failed?</h3>
+          <p class="text-slate-400">
+            90% of AI projects fail because they lack business strategy integration. We don't start with technology—we start with your 
+            growth bottlenecks. AI is the enabler, not the goal. Our clients have typically tried 2-3 consultants before finding success with us.
+          </p>
+        </div>
+
+        <div class="bg-slate-800/70 border border-slate-700 rounded-xl p-6 card-hover">
+          <h3 class="text-xl font-bold mb-3">How do you guarantee ROI?</h3>
+          <p class="text-slate-400">
+            We establish clear KPIs in week 1 and track them weekly. If you don't hit your targets within 60 days post-implementation, 
+            we continue working with you at no additional cost. Our average client sees 3.2x ROI in the first quarter.
+          </p>
+        </div>
+
+        <div class="bg-slate-800/70 border border-slate-700 rounded-xl p-6 card-hover">
+          <h3 class="text-xl font-bold mb-3">What makes your approach different from other AI consultancies?</h3>
+          <p class="text-slate-400">
+            Three things: (1) We combine strategy, playbooks, AND implementation—not just advice. (2) We deploy actual AI agents and 
+            multi-agent systems, not just recommendations. (3) We guarantee measurable results in 30 days, not "insights" in 6 months.
+          </p>
+        </div>
+
+        <div class="bg-slate-800/70 border border-slate-700 rounded-xl p-6 card-hover">
+          <h3 class="text-xl font-bold mb-3">Is this only for tech companies?</h3>
+          <p class="text-slate-400">
+            No. While we work extensively with B2B SaaS, our clients span FinTech, HealthTech, E-commerce, and Professional Services. 
+            The key criterion is growth stage ($10M+ ARR) and ambition to scale with AI-native operations.
+          </p>
+        </div>
+
+        <div class="bg-slate-800/70 border border-slate-700 rounded-xl p-6 card-hover">
+          <h3 class="text-xl font-bold mb-3">What's required from our team during the 30 days?</h3>
+          <p class="text-slate-400">
+            Week 1: 8-10 hours from leadership team. Weeks 2-4: 4-6 hours/week from key stakeholders. We handle the heavy lifting—
+            you provide strategic input and decision-making. Most clients integrate this into their existing sprint cycles.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-24 px-6 bg-gradient-to-br from-blue-900 via-purple-900 to-slate-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-6xl font-black mb-6">
+        Ready to Break Through Your Growth Plateau?
+      </h2>
+      <p class="text-xl text-slate-300 mb-12">
+        Join 47 Growth-Stage CEOs who transformed their scaling velocity with AI-native systems.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <button class="bg-blue-600 hover:bg-blue-700 px-10 py-5 rounded-xl font-bold text-xl pulse-glow transition">
+          Start Your 30-Day Impact Sprint →
+        </button>
+        <button class="border-2 border-white hover:bg-white hover:text-slate-900 px-10 py-5 rounded-xl font-bold text-xl transition">
+          Book Free Audit Call
+        </button>
+      </div>
+
+      <div class="text-sm text-slate-400 mb-8">
+        ⚡ Next cohort: 23 spots remaining · Starts in 12 days
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-8 text-sm text-slate-400">
+        <div class="flex items-center space-x-2">
+          <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          <span>60-Day ROI Guarantee</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          <span>No Long-Term Contracts</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          <span>Implementation Included</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <div class="text-2xl font-bold gradient-text mb-4">ScalingX</div>
+          <p class="text-slate-400 text-sm">
+            AI-native transformation for Growth-Stage companies.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold mb-4">Solutions</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="#" class="hover:text-blue-400 transition">Smart GTM Engineering</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Smart Operations</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Smart Governance</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Multi-Agent Systems</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="#" class="hover:text-blue-400 transition">Case Studies</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Growth Playbooks</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">AI Readiness Check</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">ROI Calculator</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="#" class="hover:text-blue-400 transition">About Us</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Our Team</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Careers</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+        <div>© 2025 ScalingX. All rights reserved.</div>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="hover:text-blue-400 transition">Privacy Policy</a>
+          <a href="#" class="hover:text-blue-400 transition">Terms of Service</a>
+          <a href="#" class="hover:text-blue-400 transition">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Interactive Elements -->
+  <script>
+    // ROI Calculator
+    const arrSlider = document.getElementById('arrSlider');
+    const teamSlider = document.getElementById('teamSlider');
+    const burnSlider = document.getElementById('burnSlider');
+    
+    const arrValue = document.getElementById('arrValue');
+    const teamValue = document.getElementById('teamValue');
+    const burnValue = document.getElementById('burnValue');
+    const roiValue = document.getElementById('roiValue');
+    const pipelineGain = document.getElementById('pipelineGain');
+    const costSaving = document.getElementById('costSaving');
+    const speedGain = document.getElementById('speedGain');
+
+    function calculateROI() {
+      const arr = parseInt(arrSlider.value);
+      const team = parseInt(teamSlider.value);
+      const burn = parseInt(burnSlider.value);
+      
+      // Simple ROI calculation formula (can be adjusted)
+      const baseROI = (arr * 0.16) + (team * 0.008) + (burn * 0.003);
+      const roi = Math.round(baseROI * 10) / 10;
+      
+      // Update values
+      arrValue.textContent = arr;
+      teamValue.textContent = team;
+      burnValue.textContent = burn;
+      roiValue.textContent = roi;
+      
+      // Calculate dynamic metrics
+      const pipeline = Math.round(30 + (arr / 3));
+      const cost = Math.round(50 + (burn / 40));
+      const speed = Math.round((2 + (team / 150)) * 10) / 10;
+      
+      pipelineGain.textContent = Math.min(pipeline, 80);
+      costSaving.textContent = Math.min(cost, 75);
+      speedGain.textContent = Math.min(speed, 5);
+    }
+
+    arrSlider.addEventListener('input', calculateROI);
+    teamSlider.addEventListener('input', calculateROI);
+    burnSlider.addEventListener('input', calculateROI);
+
+    // Initialize
+    calculateROI();
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
