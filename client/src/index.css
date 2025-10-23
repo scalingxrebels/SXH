@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --primary: 45 100% 51%;
+  --primary-foreground: 210 40% 8%;
+  --sidebar-primary: 45 100% 51%;
+  --sidebar-primary-foreground: 210 40% 8%;
+  --chart-1: var(--color-blue-300);
+  --chart-2: var(--color-blue-500);
+  --chart-3: var(--color-blue-600);
+  --chart-4: var(--color-blue-700);
+  --chart-5: var(--color-blue-800);
+  --radius: 0.65rem;
+  --background: 210 40% 8%;
+  --foreground: 210 20% 98%;
+  --card: 210 40% 10%;
+  --card-foreground: 210 20% 98%;
+  --popover: 210 40% 10%;
+  --popover-foreground: 210 20% 98%;
+  --secondary: 210 30% 18%;
+  --secondary-foreground: 210 20% 98%;
+  --muted: 210 30% 18%;
+  --muted-foreground: 210 20% 70%;
+  --accent: 45 100% 51%;
+  --accent-foreground: 210 40% 8%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 20% 98%;
+  --border: 210 30% 18%;
+  --input: 210 30% 18%;
+  --ring: 45 100% 51%;
+  --sidebar: 210 40% 10%;
+  --sidebar-foreground: 210 20% 98%;
+  --sidebar-accent: 210 30% 18%;
+  --sidebar-accent-foreground: 210 20% 98%;
+  --sidebar-border: 210 30% 18%;
+  --sidebar-ring: 45 100% 51%;
+}
+
+.dark {
+  --primary: 45 100% 51%;
+  --primary-foreground: 210 40% 8%;
+  --sidebar-primary: 45 100% 51%;
+  --sidebar-primary-foreground: 210 40% 8%;
+  --background: 210 40% 8%;
+  --foreground: 210 20% 98%;
+  --card: 210 40% 10%;
+  --card-foreground: 210 20% 98%;
+  --popover: 210 40% 10%;
+  --popover-foreground: 210 20% 98%;
+  --secondary: 210 30% 18%;
+  --secondary-foreground: 210 20% 98%;
+  --muted: 210 30% 18%;
+  --muted-foreground: 210 20% 70%;
+  --accent: 45 100% 51%;
+  --accent-foreground: 210 40% 8%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 20% 98%;
+  --border: 210 30% 18%;
+  --input: 210 30% 18%;
+  --ring: 45 100% 51%;
+  --chart-1: var(--color-blue-300);
+  --chart-2: var(--color-blue-500);
+  --chart-3: var(--color-blue-600);
+  --chart-4: var(--color-blue-700);
+  --chart-5: var(--color-blue-800);
+  --sidebar: 210 40% 10%;
+  --sidebar-foreground: 210 20% 98%;
+  --sidebar-accent: 210 30% 18%;
+  --sidebar-accent-foreground: 210 20% 98%;
+  --sidebar-border: 210 30% 18%;
+  --sidebar-ring: 45 100% 51%;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    font-family: 'Inter', sans-serif;
+  }
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   *
+   * This overrides Tailwind's default container behavior to:
+   * - Auto-center content (mx-auto)
+   * - Add responsive horizontal padding
+   * - Set max-width for large screens
+   *
+   * Usage: <div className="container">...</div>
+   *
+   * For custom widths, use max-w-* utilities directly:
+   * <div className="max-w-6xl mx-auto px-4">...</div>
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* 16px - mobile padding */
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; /* 32px - desktop padding */
+      padding-right: 2rem;
+      max-width: 1280px; /* Standard content width */
+    }
+  }
+}
